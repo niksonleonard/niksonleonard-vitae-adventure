@@ -2,7 +2,18 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+}
+
+.external-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+}
+.external-links img {
+  padding: 5px;
+  width: 40px;
 }
 
 .logo {
@@ -18,6 +29,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.me-logo {
+  text-align: center;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,13 +43,13 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .me-logo .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {

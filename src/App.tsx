@@ -1,21 +1,29 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import meLogo from '/me-500-500.png'
+import githubLogo from '/github-mark/github-mark-white.svg'
 import './App.css'
+import { JobExperienceSection } from './sections/JobExperieceSection'
+import { SummaryPageSection } from './sections/SummaryPageSection'
+import { ForFunSection } from './sections/ForFunSession'
 
 function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <div className='me-logo'>
+          <img src={meLogo} className="logo react" alt="Nikson explosion" />
+      </div>
+
+      <div className="external-links">
+        <a href="https://github.com/niksonleonard/niksonleonard-vitae-adventure" target="_blank">
+          <img src={githubLogo} alt="Github logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://www.linkedin.com/in/niksonleonard" target="_blank">
+          <img src="/LinkedIn_icon_circle.svg" alt="Linkedin logo" />
         </a>
       </div>
-      <div className="card">
-        <h1>Nikson Leonard Vitae Adventure</h1>
-      </div>
+
+      <SummaryPageSection />
+      <JobExperienceSection />
+      <ForFunSection />
     </>
   )
 }
