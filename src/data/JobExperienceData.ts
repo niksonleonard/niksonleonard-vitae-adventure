@@ -32,7 +32,8 @@ export const jobExperienceData: JobExperience[] = [
                 "Incentivo, treinamento e implantação de desenvolvimento usando TDD",
                 "Implantação de cultura e sistema para documentação de código e processos",
             ]
-        }
+        },
+        skills: ["AWS", "Docker", "PHP", "Laravel", "Lumen" , "Javascript", "Node"]
     },
     {
         language: "pt-BR",
@@ -58,34 +59,35 @@ export const jobExperienceData: JobExperience[] = [
                 "Migração de infra-estrutura em servidor interno para AWS Cloud Services.",
                 "Projeto e implantação de desenvolvimento contínuo da equipe através de cursos me metodologias práticas como Dojo Coding",
             ]
-        }
+        },
+        skills: ["AWS", "PHP", "Laravel", "CakePHP" ]
     },
     {
         language: "pt-BR",
         institution: "Tech4 TI",
         position: "Software Engineer",
-        fromDate: new Date("2021-03-01"),
-        toDate: new Date("2021-06-30"),
+        fromDate: new Date("2013-12-01"),
+        toDate: new Date("2014-03-30"),
     },
     {
         language: "pt-BR",
         institution: "BEM Group - Emergências Médicas",
         position: "Software Engineer",
-        fromDate: new Date("2021-03-01"),
-        toDate: new Date("2021-06-30"),
+        fromDate: new Date("2012-06-01"),
+        toDate: new Date("2013-12-01"),
     },
     {
         language: "pt-BR",
         institution: "Rede Record - Portal R7",
         position: "Software Engineer",
-        fromDate: new Date("2021-03-01"),
-        toDate: new Date("2021-06-30"),
+        fromDate: new Date("2011-03-01"),
+        toDate: new Date("2012-06-01"),
     },
     {
         language: "pt-BR",
         institution: "Laboratório de Sistemas Integráveis - Escola Politécnica Universidade de São Paulo",
         position: "Software Engineer",
-        fromDate: new Date("2021-03-01"),
-        toDate: new Date("2021-06-30"),
+        fromDate: new Date("2010-09-01"),
+        toDate: new Date("2011-03-01"),
     },
 ]

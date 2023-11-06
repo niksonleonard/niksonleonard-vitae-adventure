@@ -9,4 +9,5 @@ export type JobExperience = {
         summary?: string,
         details?: string[]
     }
+    skills?: string[]
 }

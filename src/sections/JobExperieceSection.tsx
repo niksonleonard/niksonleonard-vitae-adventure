@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { JobExperience } from '../model/JobExperienceType';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent, Chip, Typography } from '@mui/material';
 import { getJobExperienceService } from '../model/services/JobExperienceService';
 import { JobExperienceDescription } from '../components/ExperienceDescriptionComponent';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -46,6 +46,14 @@ export class JobExperienceSection extends Component<{}, State> {
                                     ${jobExperience.toDate.toLocaleDateString()}
                                 `}
                             </Typography>
+
+                            <Grid style={{ margin: 5 }} container spacing={1}>
+                                {jobExperience.skills?.map((skill) => {
+                                    return (<Grid>
+                                        <Chip label={skill} />
+                                        </Grid>)
+                                })}
+                            </Grid>
 
                             { !jobExperience.description || !jobExperience.description.summary
                                 ? null
